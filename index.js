@@ -29,11 +29,11 @@ const notes = [
 
 // Create HTML & API Get requests 
 app.get('/notes', function (reg, res) {
-    res.send("notes.html")
+    res.send("./client/public/notes.html")
 })
 
 app.get('/*', function (reg, res) {
-    res.send("index.html")
+    res.send("./client/public/index.html")
 })
 
 app.get('/api/notes', (reg, res) => {
